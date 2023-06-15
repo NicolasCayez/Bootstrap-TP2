@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LIEN BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- SCIPT lien Header et Footer -->
+    <!-- SCRIPT lien intégration YT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- SCRIPT lien Header et Footer -->
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -17,18 +19,82 @@
         $("#footer").load("footer.html");
         });
     </script>
-    
-    <title>Document</title>
+    <title>Musiques/Discographie</title>
 </head>
 <body>
     <!-- appel header -->
     <div id="header"></div>
-
-
+    <h1 class="text-center">Discographie</h1>
+    <div class="container card">
+        <div class="row border">
+            <div class="col-5 bg-dark text-light pt-1"><h4>Titre</h4></div>
+            <div class="col bg-dark text-light pt-1 border-start"><h4>Vidéos</h4></div>
+        </div>
+        <div class="row">
+            <div class="col-5 bg-light">Blanc sans le n ça fait black</div>
+            <div class="col-5 bg-light border-start">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsevideo0" role="button" aria-expanded="false" aria-controls="collapsevideo0">
+                    Vidéo
+                </a>
+            </div>
+            <div class="collapse" id="collapsevideo0">
+                <div class="card card-body text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3S2Qtazfqio" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">Pas celles qu'on croit</div>
+            <div class="col-5 border-start">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsevideo1" role="button" aria-expanded="false" aria-controls="collapsevideo1">
+                    Vidéo
+                </a>
+            </div>
+            <div class="collapse" id="collapsevideo1">
+                <div class="card card-body text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s8t7YhUVHvA" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 bg-light">Je suis ton bout de chocolat croque moi</div>
+            <div class="col-5 bg-light border-start">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsevideo2" role="button" aria-expanded="false" aria-controls="collapsevideo2">
+                    Vidéo
+                </a>
+            </div>
+            <div class="collapse" id="collapsevideo2">
+                <div class="card card-body text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l5v6naPkK1w" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">Kiffe l'apéritif</div>
+            <div class="col-5 border-start">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsevideo3" role="button" aria-expanded="false" aria-controls="collapsevideo3">
+                    Vidéo
+                </a>
+            </div>
+            <div class="collapse" id="collapsevideo3">
+                <div class="card card-body text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PlA0bBwBTDU" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- appel footer -->
     <div id="footer"></div>
     <!-- SCRIPT BOOTSTRAP -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    
 </html>
